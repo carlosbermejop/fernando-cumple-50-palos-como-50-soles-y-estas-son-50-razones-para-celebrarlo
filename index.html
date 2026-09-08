@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fernando cumple 50 años como 50 soles y estas son 50 razones para celebrarlo</title>
+  <meta name="description" content="Fernando cumple 50 años como 50 soles y estas son 50 razones para celebrarlo.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fernando cumple 50 años como 50 soles y estas son 50 razones para celebrarlo">
+  <meta property="og:description" content="Una razón cada vez. Vuelve a cargar para descubrir otra.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">
+      Fernando cumple 50 años como 50 soles<br>
+      y estas son 50 razones para celebrarlo
+    </h1>
+
+    <!-- Photo slot: drop the file in as assets/fernando.jpg and it appears.
+         While absent, app.js leaves the <img> out so no broken-image icon shows.
+         Pass 2 (GeoCities) decorates this frame. -->
+    <figure class="photo" id="photo" hidden>
+      <img class="photo__img" id="photo-img" src="assets/fernando.jpg" alt="Fernando">
+    </figure>
+
+    <hr class="rule">
+
+    <p class="reason" id="reason" aria-live="polite">…</p>
+
+    <button class="button" id="another" type="button">otra razón</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
