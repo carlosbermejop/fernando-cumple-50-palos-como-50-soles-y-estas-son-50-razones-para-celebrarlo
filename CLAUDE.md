@@ -38,14 +38,13 @@ Not very opinionated on which technology should be used for the website, but I w
 
 ### Consequences of the long name
 
-The directory (and intended repo) name is `fernando-cumple-50-años-como-50-soles-y-estas-son-50-razones-para-celebrarlo` — long, and containing non-ASCII characters (`ñ`, accents). Two things follow:
+The directory (and intended repo) name is `fernando-cumple-50-palos-como-50-soles-y-estas-son-50-razones-para-celebrarlo` — 77 characters, deliberately. GitHub Pages serves project sites from `/<repo-name>/`, hence the relative-paths rule above.
 
-- GitHub Pages serves project sites from `/<repo-name>/`, hence the relative-paths rule above.
-- Non-ASCII characters get percent-encoded in the URL. This is **unverified** until first push. If GitHub rejects the name, prefer ASCII substitution (`...50-anos-...`) which preserves the full length and clumsiness; initials are the last resort. Raise it, do not silently rename — the long name is the joke.
+Note the deliberate mismatch: the **URL says `palos`** while the **on-page copy says `años`**. The URL was renamed from `50-años` purely to get the `ñ` out of it, since its GitHub behaviour was never verified; *palos* is Spanish slang for years, so the joke survives the substitution. This is intentional — do not "fix" one to match the other. Keep the name ASCII and keep it long; the clumsiness of reading it aloud is the point. Initials are the last resort; raise it rather than silently renaming.
 
 ### Deployment
 
-GitHub Pages serving from the `main` branch root; no Actions workflow, since there is nothing to build. `.nojekyll` stops Pages running the files through Jekyll. After the first deploy, verify on the live URL that the relative `data/reasons.json` fetch resolves under the subpath and that the encoded `ñ`/accents work.
+GitHub Pages serving from the `main` branch root; no Actions workflow, since there is nothing to build. `.nojekyll` stops Pages running the files through Jekyll. After the first deploy, verify on the live URL that the relative `data/reasons.json` fetch resolves under the subpath.
 
 ## Visual design
 
